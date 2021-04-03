@@ -4,21 +4,21 @@
   </head>
 
   <body>
-    <a-scene>
+    <a-scene inspector="https://cdn.jsdelivr.net/gh/aframevr/aframe-inspector@master/dist/aframe-inspector.min.js">
       <!-- Storm Troopers -->
-      <a-entity gltf-model="url(https://console.echoar.xyz/query?key=crimson-sky-7281&file=e51e54c3-c14c-4d67-b69f-2fe2ef7973c5.glb)" position = '-1.2 1.5 -5' scale = '2 2 2'></a-entity>
+      <a-entity id="storm_troppers" position="-1.76541 1.56728 -4.94071" gltf-model="url(https://console.echoar.xyz/query?key=crimson-sky-7281&file=e51e54c3-c14c-4d67-b69f-2fe2ef7973c5.glb)" position = '-1.2 1.5 -5' scale = '2 2 2'></a-entity>
+      
       <!-- R2D2 -->
-      <a-entity gltf-model="url(https://console.echoar.xyz/query?key=crimson-sky-7281&file=6ddab898-f190-41cf-9a1a-e06499083db3.glb)" position = '-0.05 1.52 0.2' scale = '0.01 0.01 0.01' rotation = "0 90 0"></a-entity>
+      <a-entity id="r2d2" scale="0.1 0.1 0.1" position="-0.9701 0.87613 0.98051" gltf-model="url(https://console.echoar.xyz/query?key=crimson-sky-7281&file=6ddab898-f190-41cf-9a1a-e06499083db3.glb)" position = '-0.05 1.52 0.2' scale = '0.01 0.01 0.01' rotation = "0 90 0"></a-entity>
+      
       <!-- BB-8 -->
-      <a-entity gltf-model="url(https://console.echoar.xyz/query?key=crimson-sky-7281&file=98e0a92e-8598-4afd-a925-d6f273a194db.glb)" position = '0.04 1.4 0.18' scale = '0.1 0.1 0.1' rotation = "0 -90 0"></a-entity>
+      <a-entity id="bb8" visible="true" scale="1 1 1" position="0.04 -0.19389 0.1802" gltf-model="url(https://console.echoar.xyz/query?key=crimson-sky-7281&file=98e0a92e-8598-4afd-a925-d6f273a194db.glb)" position = '0.04 1.4 0.18' scale = '0.1 0.1 0.1' rotation = "0 -90 0"></a-entity>
       
       <!-- Ground -->
-      <a-plane position="0 0 0" rotation="-90 0 0" width="1000" height="1000" color="#641E16"></a-plane>
+      <a-plane id="plane" position="0 0 0" rotation="-90 0 0" width="1000" height="1000" color="#641E16"></a-plane>
       
       <!-- Sky -->
-      <a-sky color="#CD6155"></a-sky>
+      <a-sky id="sky" color="#CD6155"></a-sky>
     </a-scene>
   </body>
 </html>
-
-
