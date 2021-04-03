@@ -49,6 +49,7 @@ https://console.echoAR.xyz/query?key=<API_KEY>
 to retrieve a data set of entries associated with your API key. Read more about API calls [here](https://docs.echoar.xyz/objects).
 
 You should use [Postman](https://www.postman.com) and try it out yourself. Using the GET method, you'll see something like this:
+
 ![alt text](./Screenshots/postman.png)
 
 In "additionalData", you'll see "glbHologramStorageID". We will need it to retrieve the GLB file. Note that A-Frame supports GLB best, and file formats like OBJ may cause problems including missing texture (since file structures may be different).
@@ -111,14 +112,12 @@ and the code looks like this:
 ## Run
 Now, simply click on ```home.html``` to to view the scene in your browser.
 
-There you go!
-
 ![alt text](./Screenshots/1.png)
 ![alt text](./Screenshots/2.png)
 
 ## A-Frame Inspctor
 
-What if I want to move the objects around with my mouse? You can use the A-Frame Inspector to inspect and tweak scenes. With the Inspector, you can simply move, rotate, and rescale the entities in the scene and see the result at real time (so you don't have to change the HTML file and recompile every time, which can be very annoying and inefficient).
+You can use the A-Frame Inspector to inspect and tweak scenes – that means moving, rotating, and rescaling the entities in the scene and seeing the result at real time. (Thus, you don't have to change the HTML file and recompile every time, which can be very annoying and inefficient.)
 
 To try it out, you should specify a build of the Inspector in the scene like this:
 ```
@@ -172,7 +171,7 @@ Alternatively, you can specify which HTML file to use:
 aframe-watcher home.html
 ```
 
-Now, it'll start watching for changes from the Inspector:
+Then the aframe-watcher will start watching for changes from the Inspector:
 
 ![alt text](./Screenshots/start.png)
 
@@ -182,7 +181,7 @@ Now we are ready to enter the A-Frame Inspector. Simply press ```<ctrl> + <alt> 
 
 You can see all entities are listed on the left. If we click on one of the entities on the list (or simply click on the entity in the scene), we'll be able to select the entity and see its attributes (e.g., position, rotation, scale, and even link to the gltf-model). You can also move the entities around by dragging on an axis.
 
-![alt text](./Screenshots/inspector-select.png)
+![alt text](./Screenshots/inspector_select.png)
 
 When you're done moving your entities around, you might want to save the file. Just click on the button on the upperleft:
 
