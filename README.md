@@ -115,7 +115,7 @@ Now, simply click on ```home.html``` to to view the scene in your browser.
 ![alt text](./Screenshots/1.png)
 ![alt text](./Screenshots/2.png)
 
-## A-Frame Inspctor
+## A-Frame Inspector
 
 You can use the A-Frame Inspector to inspect and tweak scenes – that means moving, rotating, and rescaling the entities in the scene and seeing the result at real time. (Thus, you don't have to change the HTML file and recompile every time, which can be very annoying and inefficient.)
 
